@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8xb-Rp-I7B" kind="show" id="ttr-i4-rS2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +39,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2W-Ph-sfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2704.8000000000002" y="-322.48875562218893"/>
+        </scene>
+        <!--Person name-->
+        <scene sceneID="UyU-Tr-nHt">
+            <objects>
+                <viewController id="8xb-Rp-I7B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBB-cs-Swn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jkz-K9-WTA">
+                                <rect key="frame" x="20" y="126" width="335" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☎️ Phone: 999999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASt-60-0fH">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✉️ Email: email@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDH-EU-P5q">
+                                        <rect key="frame" x="0.0" y="36.5" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lrr-QV-er8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jkz-K9-WTA" firstAttribute="leading" secondItem="Lrr-QV-er8" secondAttribute="leading" constant="20" id="Wnu-gi-mZw"/>
+                            <constraint firstItem="Lrr-QV-er8" firstAttribute="trailing" secondItem="Jkz-K9-WTA" secondAttribute="trailing" constant="20" id="jCE-xR-yh9"/>
+                            <constraint firstItem="Jkz-K9-WTA" firstAttribute="top" secondItem="Lrr-QV-er8" secondAttribute="top" constant="30" id="mJM-ma-Rk5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Person name" id="G9J-hK-vCy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T8-TH-xy8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3446" y="-322"/>
         </scene>
         <!--Detailed Person List-->
         <scene sceneID="qaP-Sd-BVc">
