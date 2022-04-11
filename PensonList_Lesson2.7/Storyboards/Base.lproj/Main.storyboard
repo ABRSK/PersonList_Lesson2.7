@@ -11,7 +11,7 @@
         <!--Basic List-->
         <scene sceneID="VeH-Sc-6gQ">
             <objects>
-                <tableViewController id="WH0-WF-k3Y" sceneMemberID="viewController">
+                <tableViewController id="WH0-WF-k3Y" customClass="BasicListTableViewController" customModule="PensonList_Lesson2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="mAh-GL-lF4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--Detailed List-->
         <scene sceneID="j9M-hS-P6z">
             <objects>
-                <tableViewController id="xVq-zz-938" sceneMemberID="viewController">
+                <tableViewController id="xVq-zz-938" customClass="DetailedListViewController" customModule="PensonList_Lesson2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="WeQ-KY-yra">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--Person name-->
         <scene sceneID="UyU-Tr-nHt">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8xb-Rp-I7B" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8xb-Rp-I7B" customClass="PersonViewController" customModule="PensonList_Lesson2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBB-cs-Swn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3T8-TH-xy8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5127" y="-297"/>
+            <point key="canvasLocation" x="5247" y="-297"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EFu-Lh-hla">
@@ -128,7 +128,7 @@
         <!--Person List-->
         <scene sceneID="KGh-Nw-C5n">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sqL-hc-j5f" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sqL-hc-j5f" customClass="TabBarViewController" customModule="PensonList_Lesson2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Person List" id="LJE-Np-sun"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VN5-cl-hQF">
