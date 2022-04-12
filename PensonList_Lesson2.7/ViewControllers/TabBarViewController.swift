@@ -12,19 +12,11 @@ class TabBarViewController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
+    guard let basicListVC = viewControllers?.first as? BasicListTableViewController else { return }
+    guard let detailedListVC = viewControllers?.last as? DetailedListViewController else { return }
+    let personList = Person.getPersons() // Общий массив, иначе разные данные
+    
+    basicListVC.personList = personList
+    detailedListVC.personList = personList
   }
-  
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
 }
-
