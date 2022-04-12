@@ -6,6 +6,9 @@
 //
 
 class DataStorage {
+  
+  static let data = DataStorage() // Дать внешний доступ
+  
   let firstNames = [
     "Andrey",
     "Brian",
